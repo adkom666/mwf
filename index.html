@@ -112,11 +112,23 @@
                 highlightMenuItem(sectionName);
                 showPage(sectionName);
             }
+            function afterSharp() {
+                var urlParts = location.toString().split('#');
+                if (urlParts.length > 1) {
+                    return urlParts[1];
+                } else {
+                    return '';
+                }
+            }
+            var requestedSectionName = afterSharp();
+            if (requestedSectionName.length > 0) {
+                localStorage.setItem('metronome_section_name', requestedSectionName);
+            }
         </script>
     </head>
     <body onLoad=restoreSection()>
         <div id="header">
-            <a id="header_link" href="#" onClick=setSection('title')>
+            <a id="header_link" href="#title" onClick=setSection('title')>
                 <table id="header_table">
                     <tr class="closer">
                         <td class="closer">
@@ -136,14 +148,14 @@
         </div>
         <div id="menu">
             <ul class="nav">
-                <li><a id="a_title" href="#" onClick=setSection('title')>Title</a></li>
-                <li><a id="a_metronome" href="#" onClick=setSection('metronome')>Metronome</a></li>
-                <li><a id="a_editor" href="#" onClick=setSection('editor')>Editor</a></li>
-                <li><a id="a_network" href="#" onClick=setSection('network')>Network</a></li>
-                <li><a id="a_adjust" href="#" onClick=setSection('adjust')>Adjust</a></li>
-                <li><a id="a_settings" href="#" onClick=setSection('settings')>Settings</a></li>
-                <li><a id="a_donations" href="#" onClick=setSection('donations')>Donations</a></li>
-                <li><a id="a_thanks" href="#" onClick=setSection('thanks')>Thanks</a></li>
+                <li><a id="a_title" href="#title" onClick=setSection('title')>Title</a></li>
+                <li><a id="a_metronome" href="#metronome" onClick=setSection('metronome')>Metronome</a></li>
+                <li><a id="a_editor" href="#editor" onClick=setSection('editor')>Editor</a></li>
+                <li><a id="a_network" href="#network" onClick=setSection('network')>Network</a></li>
+                <li><a id="a_adjust" href="#adjust" onClick=setSection('adjust')>Adjust</a></li>
+                <li><a id="a_settings" href="#settings" onClick=setSection('settings')>Settings</a></li>
+                <li><a id="a_donations" href="#donations" onClick=setSection('donations')>Donations</a></li>
+                <li><a id="a_thanks" href="#thanks" onClick=setSection('thanks')>Thanks</a></li>
             </ul>
             <p>
                 <a href="https://play.google.com/store/apps/details?id=com.adkom666.metronomewifi" target="_blank">
