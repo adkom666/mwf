@@ -1,312 +1,356 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta 
-            name="description" 
-            content="The site about the metronome app synchronizated via Wi-Fi on Android">
-        <meta 
-            name="keywords" 
-            content=
-                "metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, 
-                 метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
-        <title>Metronome Wi-Fi</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <h2>Editor</h2>
-        <p class="text">
-            The editor allows you to create your own complicated rhythm. 
-            The simplest rhythm is a loop that repeats one bar a given number of times. 
-            As you complicate it, you can add bars and other loops. 
-            In the image below you can see the selected empty loop.
-        </p>
-        <p>
-            <img 
-                src="images/pic_selected_loop.png" 
-                alt="Metronome Touch" 
-                width="342px" />
-        </p>
-        <p class="text">
+<html lang="en_US">
+<head>
+  <title>Metronome Wi-Fi</title>
+  <link href="img/ic-metwifi-tab.png" rel="icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ie10-viewport-bug-workaround.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="keywords" content="metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
+  <meta name="twitter:title" content="Metronome Wi-Fi">
+  <meta name="twitter:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="twitter:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Metronome Wi-Fi">
+  <meta property="og:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta property="og:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B6DEMF6LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2B6DEMF6LT');
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top mwf-navbar">
+  <div class="container-fluid mwf-nav-content unselectable">
+    <a id="mwf-brand" class="navbar-brand" href="index.html">
+      <img class="mwf-icon" src="img/ic-metwifi.png" alt="Icon">
+      <span class="mwf-title">Metronome Wi-Fi</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="metronome.html">Metronome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="editor.html">Editor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="network.html">Network</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adjust.html">Adjust</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="container">
+    <!-- About Metronome Wi-Fi -->
+    <div class="mwf-about">
+      <div class="row justify-content-center">
+        <div class="col col-xl-10 col-lg-11 col-md-12">
+          <h2>Editor</h2>
+          <p>
+            The editor allows you to create your own complicated rhythm. The simplest rhythm is a loop that repeats one bar a given number of times. As you complicate it, you can add bars and other loops. In the image below you can see the selected empty loop.
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-selected-loop.png" alt="Selected loop">
+          </div>
+          <p>
             An unselected empty loop looks like this:
-        </p>
-        <p>
-            <img 
-                src="images/pic_unselected_loop.png" 
-                alt="Metronome Touch" 
-                width="342px" />
-        </p>
-        <p class="text">
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-unselected-loop.png" alt="Unselected loop">
+          </div>
+          <p>
             To add a bar to the selected loop, click the &quot;Bar&quot; button.
-        </p>
-        <p>
-            <img 
-                src="images/pic_loop_with_bar.png" 
-                alt="Metronome Touch" 
-                width="456px" />
-        </p>
-        <p class="text">
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-loop-with-bar.png" alt="Loop with bar">
+          </div>
+          <p>
             To add another loop to the selected one, click the &quot;Loop&quot; button.
-        </p>
-        <p>
-            <img 
-                src="images/pic_loop_with_bar_and_another_loop.png" 
-                alt="Metronome Touch" 
-                width="456px" />
-        </p>
-        <p class="text">
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-loop-with-bar-and-another-loop.png" alt="Loop with bar and another loop">
+          </div>
+          <p>
             The maximum level of nesting loops is 8, where 0 is the level of the root loop:
-        </p>
-        <p>
-            <img 
-                src="images/pic_nested_loops.png" 
-                alt="Metronome Touch" 
-                width="468px" />
-        </p>
-        <p class="text">
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-nested-loops.png" alt="Nested loops">
+          </div>
+          <p>
             Combine the bars and loops to achieve the desired rhythm.
-        </p>
-        <br />
-        <h3>Buttons</h3>
-        <p>
-            <table class="but-table">
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/file_new.png" 
-                            alt="New Rhythm" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>New Rhythm</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button begins a new rhythm.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/file_open.png" 
-                            alt="Open Rhythm" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Open Rhythm</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button loads the rhythm from the file.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/file_save.png" 
-                            alt="Save Rhythm" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Save Rhythm</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button saves the rhythm in the file.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/file_save_as.png" 
-                            alt="Save Rhythm As&hellip;" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Save Rhythm As&hellip;</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button saves the rhythm in the file and always prompts you to enter the file name.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/settings.png" 
-                            alt="Settings" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Settings</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button displays a dialog box with editor settings. They allow you to set the type of sound when playing a rhythm from editor.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/loop.png" 
-                            alt="Loop" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Loop</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        The &quot;Loop&quot; button adds a new loop to the selected one.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/bar.png" 
-                            alt="Bar" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Bar</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        The &quot;Bar&quot; button adds a new bar to the selected loop.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/delete.png" 
-                            alt="Delete" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Delete</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button deletes the selected bar or loop.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/up.png" 
-                            alt="Move Up" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Move Up</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button moves the selected bar or loop up within the parent loop.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/down.png" 
-                            alt="Move Down" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Move Down</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button moves the selected bar or loop down within the parent loop.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/play.png" 
-                            alt="Play" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Play</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button starts playing the current rhythm. The first will sound the selected bar or the first bar of the selected loop. 
-                        If nothing is selected, the rhythm will sound from the beginning. During playback, the button turns into a &quot;Stop&quot; button.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/stop.png" 
-                            alt="Stop" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Stop</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button stops playing the current rhythm and turns back to the &quot;Play&quot; button.
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <img 
-                            src="images/buttons/tap_tempo.png" 
-                            alt="Tap Tempo" 
-                            width="36px" />
-                    </td>
-                    <td>
-                        <h4>Tap Tempo</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button brings up a dialog box that can measure the frequency of your touches and set it as a tempo.
-                    </td>
-                </tr>
+          </p>
+          <h3>Buttons</h3>
+          <p>
+            <table class="btn-table">
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/file-new.png" alt="New rhythm">
+                </td>
+                <td>
+                  <strong>New Rhythm</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button begins a new rhythm.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/file-open.png" alt="Open rhythm">
+                </td>
+                <td>
+                  <strong>Open Rhythm</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button loads the rhythm from the file.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/file-save.png" alt="Save rhythm">
+                </td>
+                <td>
+                  <strong>Save Rhythm</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button saves the rhythm in the file.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/file-save-as.png" alt="Save rhythm as&hellip;">
+                </td>
+                <td>
+                  <strong>Save Rhythm As&hellip;</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button saves the rhythm in the file and always prompts you to enter the file name.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/settings.png" alt="Settings">
+                </td>
+                <td>
+                  <strong>Settings</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button displays a dialog box with editor settings. They allow you to set the type of sound when playing a rhythm from editor.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/loop.png" alt="Loop">
+                </td>
+                <td>
+                  <strong>Loop</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  The &quot;Loop&quot; button adds a new loop to the selected one.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/bar.png" alt="Bar">
+                </td>
+                <td>
+                  <strong>Bar</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  The &quot;Bar&quot; button adds a new bar to the selected loop.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/delete.png" alt="Delete">
+                </td>
+                <td>
+                  <strong>Delete</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button deletes the selected bar or loop.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/up.png" alt="Move up">
+                </td>
+                <td>
+                  <strong>Move Up</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button moves the selected bar or loop up within the parent loop.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/down.png" alt="Move down">
+                </td>
+                <td>
+                  <strong>Move Down</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button moves the selected bar or loop down within the parent loop.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/play.png" alt="Play">
+                </td>
+                <td>
+                  <strong>Play</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button starts playing the current rhythm. The first will sound the selected bar or the first bar of the selected loop. If nothing is selected, the rhythm will sound from the beginning. During playback, the button turns into a &quot;Stop&quot; button.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/stop.png" alt="Stop">
+                </td>
+                <td>
+                  <strong>Stop</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button stops playing the current rhythm and turns back to the &quot;Play&quot; button.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn-small" src="img/btn/tap-tempo.png" alt="Tap tempo">
+                </td>
+                <td>
+                  <strong>Tap Tempo</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button brings up a dialog box that can measure the frequency of your touches and set it as a tempo.
+                </td>
+              </tr>
             </table>
-        </p>
-    </body>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of 'About Metronome Wi-Fi' -->
+  </section>
+  <section class="container-fluid px-0 bg-footer">
+    <div class="mvf-footer">
+      <div class="row justify-content-center">
+        <div class="col col-lg-6 col-md-8 col-sm-10">
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=com.adkom666.metronomewifi" target="_blank">
+              <img
+                class="mwf-download-img highlightable"
+                src="img/ic-google-play.png"
+                alt="Metronome Wi-Fi on Google Play"
+                border="0">
+            </a>
+          </p>
+          <h2>Thanks</h2>
+          <h3>To Artem Shcheglov</h3>
+          <p>
+            For idea
+          </p>
+          <h3>To Anyuta</h3>
+          <p>
+            For nails
+          </p>
+          <h3>To You</h3>
+          <p>
+            For improving the rhythm
+          </p>
+          <h3>To Me</h3>
+          <p>
+            Donations are implemented as in-app purchases,<br>
+            no functionality is hidden behind them
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.min.js"></script>   
+</body>
 </html>

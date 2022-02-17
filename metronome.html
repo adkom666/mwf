@@ -1,143 +1,224 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta 
-            name="description" 
-            content="The site about the metronome app synchronizated via Wi-Fi on Android">
-        <meta 
-            name="keywords" 
-            content=
-                "metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, 
-                 метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
-        <title>Metronome Wi-Fi</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <h2>Metronome</h2>
-        <p class="text">
+<html lang="en_US">
+<head>
+  <title>Metronome Wi-Fi</title>
+  <link href="img/ic-metwifi-tab.png" rel="icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ie10-viewport-bug-workaround.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="keywords" content="metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
+  <meta name="twitter:title" content="Metronome Wi-Fi">
+  <meta name="twitter:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="twitter:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Metronome Wi-Fi">
+  <meta property="og:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta property="og:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B6DEMF6LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2B6DEMF6LT');
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top mwf-navbar">
+  <div class="container-fluid mwf-nav-content unselectable">
+    <a id="mwf-brand" class="navbar-brand" href="index.html">
+      <img class="mwf-icon" src="img/ic-metwifi.png" alt="Icon">
+      <span class="mwf-title">Metronome Wi-Fi</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="metronome.html">Metronome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="editor.html">Editor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="network.html">Network</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adjust.html">Adjust</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="container">
+    <!-- About Metronome Wi-Fi -->
+    <div class="mwf-about">
+      <div class="row justify-content-center">
+        <div class="col col-xl-10 col-lg-11 col-md-12">
+          <h2>Metronome</h2>
+          <p>
             The metronome is touchable:
-        </p>
-        <p>
-            <img 
-                src="images/metronome_touch.png" 
-                alt="Metronome Touch" 
-                width="360px" />
-        </p>
-        <br />
-        <h3>Buttons</h3>
-        <p>
-            <table class="but-table">
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/declined_pendulum.png" 
-                            alt="Normal Pendulum" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Normal Pendulum</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button sets the pendulum to normal state.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/inclined_pendulum.png" 
-                            alt="Pressed Pendulum" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Pressed Pendulum</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button presses the pendulum to the metronome scale.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/turn.png" 
-                            alt="Turn" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Turn</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button sets the state in which horizontal slide causes the metronome to turn.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/move_horizontal.png" 
-                            alt="Move Horizontal" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Move Horizontal</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button sets the state in which horizontal slide causes the metronome to move horizontally.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/incline.png" 
-                            alt="Incline" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Incline</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button sets the state in which vertical slide causes the metronome to incline.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/move_vertical.png" 
-                            alt="Move Vertical" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Move Vertical</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button sets the state in which vertical slide causes the metronome to move vertically.
-                    </td>
-                </tr>
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img-large" src="img/metronome-touch.jpg" align="Touchable metronome">
+          </div>
+          <h3>Buttons</h3>
+          <p>
+            <table class="btn-table">
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/declined-pendulum.png" alt="Normal pendulum">
+                </td>
+                <td>
+                  <strong>Normal Pendulum</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button sets the pendulum to normal state.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/inclined-pendulum.png" alt="Pressed pendulum">
+                </td>
+                <td>
+                  <strong>Pressed Pendulum</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button presses the pendulum to the metronome scale.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/turn.png" alt="Turn">
+                </td>
+                <td>
+                  <strong>Turn</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button sets the state in which horizontal slide causes the metronome to turn.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/move-horizontal.png" alt="Move horizontal">
+                </td>
+                <td>
+                  <strong>Move Horizontal</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button sets the state in which horizontal slide causes the metronome to move horizontally.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/incline.png" alt="Incline">
+                </td>
+                <td>
+                  <strong>Incline</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button sets the state in which vertical slide causes the metronome to incline.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/move-vertical.png" alt="Move vertical">
+                </td>
+                <td>
+                  <strong>Move Vertical</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button sets the state in which vertical slide causes the metronome to move vertically.
+                </td>
+              </tr>
             </table>
-        </p>
-    </body>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of 'About Metronome Wi-Fi' -->
+  </section>
+  <section class="container-fluid px-0 bg-footer">
+    <div class="mvf-footer">
+      <div class="row justify-content-center">
+        <div class="col col-lg-6 col-md-8 col-sm-10">
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=com.adkom666.metronomewifi" target="_blank">
+              <img
+                class="mwf-download-img highlightable"
+                src="img/ic-google-play.png"
+                alt="Metronome Wi-Fi on Google Play"
+                border="0">
+            </a>
+          </p>
+          <h2>Thanks</h2>
+          <h3>To Artem Shcheglov</h3>
+          <p>
+            For idea
+          </p>
+          <h3>To Anyuta</h3>
+          <p>
+            For nails
+          </p>
+          <h3>To You</h3>
+          <p>
+            For improving the rhythm
+          </p>
+          <h3>To Me</h3>
+          <p>
+            Donations are implemented as in-app purchases,<br>
+            no functionality is hidden behind them
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.min.js"></script>   
+</body>
 </html>

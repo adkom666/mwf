@@ -1,114 +1,185 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta 
-            name="description" 
-            content="The site about the metronome app synchronizated via Wi-Fi on Android">
-        <meta 
-            name="keywords" 
-            content=
-                "metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, 
-                 метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
-        <title>Metronome Wi-Fi</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <h2>Network</h2>
-        <p class="text">
-            In networking, one of the devices creates a group and is its owner, while other devices join this group. 
-            On all devices of the group, the rhythm set by the group owner sounds. 
-            If a member of the group, who is not the owner of it, starts his metronome or plays the rhythm in his editor, 
-            he will automatically disjoin from the group.
-        </p>
-        <p>
-            <img 
-                src="images/fly_en_net.png" 
-                alt="Network Title" 
-                width="360px"
-                border="1" />
-        </p>
-        <p class="text">
+<html lang="en_US">
+<head>
+  <title>Metronome Wi-Fi</title>
+  <link href="img/ic-metwifi-tab.png" rel="icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ie10-viewport-bug-workaround.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="keywords" content="metronome, wifi, wi-fi, sync, synchronization, multiuser, rhythm, editor, 3d, android, метроном, вайфай, синхронизация, многопользовательский, ритм, редактор, 3д, андроид">
+  <meta name="twitter:title" content="Metronome Wi-Fi">
+  <meta name="twitter:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta name="twitter:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Metronome Wi-Fi">
+  <meta property="og:description" content="The site about the metronome app synchronizated via Wi-Fi on Android">
+  <meta property="og:image" content="http://adkom666.github.io/mwf/img/snippet-en.jpg">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B6DEMF6LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2B6DEMF6LT');
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top mwf-navbar">
+  <div class="container-fluid mwf-nav-content unselectable">
+    <a id="mwf-brand" class="navbar-brand" href="index.html">
+      <img class="mwf-icon" src="img/ic-metwifi.png" alt="Icon">
+      <span class="mwf-title">Metronome Wi-Fi</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="metronome.html">Metronome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="editor.html">Editor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="network.html">Network</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adjust.html">Adjust</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="container">
+    <!-- About Metronome Wi-Fi -->
+    <div class="mwf-about">
+      <div class="row justify-content-center">
+        <div class="col col-xl-10 col-lg-11 col-md-12">
+          <h2>Network</h2>
+          <p>
+            In networking, one of the devices creates a group and is its owner, while other devices join this group. On all devices of the group, the rhythm set by the group owner sounds. If a member of the group, who is not the owner of it, starts his metronome or plays the rhythm in his editor, he will automatically disjoin from the group.
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img-large mwf-border" src="img/nex7-en-net.png" alt="Network title">
+          </div>
+          <p>
             To create a group, click the &quot;Create Group&quot; button and enter the name of the group in the dialog box that appears.
-        </p>
-        <p>
-            <img 
-                src="images/fly_en_group.png" 
-                alt="Network Group" 
-                width="360px" 
-                border="1" />
-        </p>
-        <p class="text">
-            To join to group, click the &quot;Join To Group&quot; button and wait until at least one group is found. 
-            After that you will see a screen with a list of detected groups. 
-            Select the desired group and click the &quot;Join&quot; button. 
-            The &quot;Disjoin&quot; button causes disjoint, the screen does not change. 
-            The &quot;Initial State&quot; button leads to a return to the previous screen. 
-            In this case, if the device is in any group, a disjoint occurs.
-        </p>
-        <p>
-            <img 
-                src="images/fly_en_joint.png" 
-                alt="Network Joint" 
-                width="360px" 
-                border="1" />
-        </p>
-        <p class="text">
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img-large mwf-border" src="img/nex7-en-group.png" alt="Network group">
+          </div>
+          <p>
+            To join to group, click the &quot;Join To Group&quot; button and wait until at least one group is found. After that you will see a screen with a list of detected groups. Select the desired group and click the &quot;Join&quot; button. The &quot;Disjoin&quot; button causes disjoint, the screen does not change. The &quot;Home&quot; button leads to a return to the previous screen. In this case, if the device is in any group, a disjoint occurs.
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img-large mwf-border" src="img/nex7-en-joint.png" alt="Network joint">
+          </div>
+          <p>
             After joining the group, synchronization is performed, the results of which are displayed on the screen:
-        </p>
-        <p>
-            <img 
-                src="images/pic_time_diff.png" 
-                alt="Time Difference" 
-                width="456px" />
-        </p>
-        <p class="text">
-            The total time difference is made up of this value and the difference in delays in sound reproduction, depending on the specific device. 
-            To keep this difference to a minimum, its adjusting is provided in the app.
-        </p>
-        <br />
-        <h3>Buttons</h3>
-        <p>
-            <table class="but-table">
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/settings.png" 
-                            alt="Network Settings" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Network Settings</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button shows a dialog box with network settings. 
-                        They allow you to set the type of sound when playing a rhythm received over the network and the type of synchronization.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img 
-                            src="images/buttons/ic_wifi_direct_on.png" 
-                            alt="Wi-Fi Settings" 
-                            width="48px" />
-                    </td>
-                    <td>
-                        <h4>Wi-Fi Settings</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td class="text">
-                        This button shows system settings to allow configuration of Wi-Fi.
-                    </td>
-                </tr>
+          </p>
+          <div class="mwf-img-wrapper">
+            <img class="mwf-img" src="img/pic-time-diff.png" alt="Time difference">
+          </div>
+          <p>
+            The total time difference is made up of this value and the difference in delays in sound reproduction, depending on the specific device. To keep this difference to a minimum, its adjusting is provided in the app.
+          </p>
+          <h3>Buttons</h3>
+          <p>
+            <table class="btn-table">
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/settings.png" alt="Network settings">
+                </td>
+                <td>
+                  <strong>Network Settings</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button shows a dialog box with network settings. They allow you to set the type of sound when playing a rhythm received over the network and the type of synchronization.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="mwf-btn" src="img/btn/ic-wifi-direct-on.png" alt="Wi-Fi settings">
+                </td>
+                <td>
+                  <strong>Wi-Fi Settings</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  This button shows system settings to allow configuration of Wi-Fi.
+                </td>
+              </tr>
             </table>
-        </p>
-    </body>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of 'About Metronome Wi-Fi' -->
+  </section>
+  <section class="container-fluid px-0 bg-footer">
+    <div class="mvf-footer">
+      <div class="row justify-content-center">
+        <div class="col col-lg-6 col-md-8 col-sm-10">
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=com.adkom666.metronomewifi" target="_blank">
+              <img
+                class="mwf-download-img highlightable"
+                src="img/ic-google-play.png"
+                alt="Metronome Wi-Fi on Google Play"
+                border="0">
+            </a>
+          </p>
+          <h2>Thanks</h2>
+          <h3>To Artem Shcheglov</h3>
+          <p>
+            For idea
+          </p>
+          <h3>To Anyuta</h3>
+          <p>
+            For nails
+          </p>
+          <h3>To You</h3>
+          <p>
+            For improving the rhythm
+          </p>
+          <h3>To Me</h3>
+          <p>
+            Donations are implemented as in-app purchases,<br>
+            no functionality is hidden behind them
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.min.js"></script>   
+</body>
 </html>
