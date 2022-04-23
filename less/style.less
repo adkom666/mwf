@@ -10,6 +10,8 @@
 /* Dimensions */
 
 @icon-size: 40px;
+@title-font-size: 28px;
+@mobile-nav-item-font-size: 22px;
 
 /* Fonts */
 
@@ -94,6 +96,18 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .mwf-navbar {
+    font-size: @mobile-nav-item-font-size;
+    background-color: @navbar-bg-color;
+  }
+  .mwf-nav-content {
+    li {
+      padding: 0.75rem;
+    }
+  }
+}
+
 #mwf-brand {
   &:hover {
     color: @illustrative-color;
@@ -108,7 +122,7 @@ body {
 
 .mwf-title {
   .font-medium();
-  font-size: 28px;
+  font-size: @title-font-size;
   vertical-align: middle;
 }
 
